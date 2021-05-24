@@ -90,6 +90,22 @@ a {
 .float--right {
     float: right;
 }
+/* SUMMARY */
+.summary{
+
+}
+.summary__title{
+
+}
+.summary__description{
+
+}
+
+/* SECTION & CONTAINER */
+.section .container{
+    width: 980px;
+    margin: 0 auto;
+}
 
 /* HEADER */
 header {
@@ -98,10 +114,8 @@ header {
     background: #fff;
 }
 
-header .container {
-    max-width: 980px;
+header .container { 
     height: 78px;
-    margin: 0 auto;
 }
 
 header .menu-group {
@@ -183,4 +197,16 @@ header .sub-menu li a {
 
 header .sub-menu li a:hover {
     color: #4078c0;
+}
+
+
+/* VISUAL */
+.section--visual{
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    
+}
+.section--visual .container{
+    padding: 160px 0;
 }
