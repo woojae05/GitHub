@@ -38,10 +38,10 @@
 </head>
 
 <body>
-    <div class="body__container">
+    <div class="body__inner">
         <!-- HEADER -->
         <header class="section">
-            <div class="container clearfix">
+            <div class="inner clearfix">
                 <div class="menu-group float--left">
                     <div class="logo">
                         <a href="#">GitHub</a>
@@ -74,7 +74,7 @@
 
         <!-- VISUAL -->
         <section class="section section--visual">
-            <div class="container">
+            <div class="inner">
                 <div class="summary">
                     <h2 class="summary__title">
                         How&nbsp;people build&nbsp;software
@@ -119,7 +119,7 @@
             </div>
 
             <div class="tiles">
-                <div class="container">
+                <div class="inner">
                     <ul class="clearfix">
                         <li>
                             <img src="./img/feature-tile__build.png" alt="build">
@@ -147,6 +147,47 @@
             </div>
         </section>
 
+        <!-- Where is? -->
+                <section class="section section--where-is">
+                    <div class="inner">
+                        <div class="summary">
+                            <div class="summary__title">
+                                Where is GitHub?
+                            </div>
+                            <div class="summary__description">
+                                GitHub is where people build software. More than 18 million people use GitHub to discover, fork, and contribute to over 48 million projects.
+
+                            </div>
+                        </div>
+
+                        <div id="map"></div>
+
+                    </div>
+
+                </section>
+                
     </div>
+    <script>
+        function initMap(){
+            const myLatLng={
+                lat:37.782293,
+                lng:-122.391240
+            }
+            const map = new google.maps.Map(
+                document.getElementById('map'),
+                {
+                    center:myLatLng,
+                    scrollwheel: false,
+                    zoom: 18
+                }
+            );
+            const marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'GitHub'
+            })
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap" async defer></script>
 </body>
 </html>

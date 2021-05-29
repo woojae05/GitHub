@@ -1,5 +1,5 @@
 /* COMMON */
-.body__container {
+.body__inner {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -113,7 +113,7 @@ a {
     position: relative;
 }
 
-.section .container {
+.section .inner {
     width: 980px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -127,7 +127,7 @@ header {
     background: #fff;
 }
 
-header .container {
+header .inner {
     height: 78px;
 }
 
@@ -232,7 +232,7 @@ header .sub-menu li a:hover {
 
 }
 
-.section--visual .container {
+.section--visual .inner {
     padding: 160px 0;
     display: flex;
 }
@@ -361,4 +361,22 @@ header .sub-menu li a:hover {
 .section-feature .tiles p {
     font-size: 14px;
     color: #767676;
+}
+
+/* WHERE IS */
+.section--where-is{
+
+}
+.section--where-is .inner{
+    padding-top: 80px;
+}
+#map{
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+    border: 1px solid rgba(0, 0, 0, .2); 
+    box-sizing: border-box;
+    border-bottom:none;
+    box-shadow: 0 0 20px rgba(0, 0 , 0, .2);
+    
 }
