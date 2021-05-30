@@ -378,5 +378,35 @@ header .sub-menu li a:hover {
     box-sizing: border-box;
     border-bottom:none;
     box-shadow: 0 0 20px rgba(0, 0 , 0, .2);
-    
+}
+
+/* PRICING CARD */
+.section--pricing{
+    background: linear-gradient(#f5f5f5,#fff);
+}
+.section--pricing .inner{
+    padding: 80px 0 ;
+}
+.section--pricing .card{
+    display: flex;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.section--pricing .card .cell{
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: cneter;
+}
+.section--pricing .card .cell1 .btn{
+    height: 50px;
+    font-size: 16px;
+}
+.section--pricing .card .cell2{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    flex: 1;
+    border-left: 1px solid #e5e5e5;
 }
