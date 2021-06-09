@@ -212,7 +212,7 @@ header .sub-menu li a:hover {
     color: #4078c0;
 }
 
-#toggle-btn{
+#toggle-btn {
     display: none;
     background: url("../img/toggle-btn.svg");
     width: 18px;
@@ -471,6 +471,7 @@ footer .logo:hover svg {
 @media (max-width:1024px) {
     header.section .inner {
         max-width: none;
+        width: auto;
         height: auto;
         padding: 0 20px;
     }
@@ -546,6 +547,11 @@ footer .logo:hover svg {
     }
 
     #toggle-btn {
-       display: block;
+        display: block;
+    }
+
+    .section .inner{
+        width: 100%;
+        
     }
 }
