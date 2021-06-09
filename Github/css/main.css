@@ -551,22 +551,39 @@ footer .logo:hover svg {
     }
 
     /* VISUAL */
-    .section--visual{
+    .section--visual {
         background-image: url(../img/bg-small.jpg);
     }
-    .section--visual .inner{
+
+    .section--visual .inner {
         display: block;
         max-width: none;
         padding: 80px 20px;
     }
-    .section--visual .summary{
+
+    .section--visual .summary {
         text-align: center;
         margin-right: 0;
         margin-bottom: 50px;
     }
-    #sign-form{
+
+    #sign-form {
         width: auto;
         max-width: 500px;
         margin: 0 auto;
+    }
+
+    /* FEATURE */
+    .section--feature .summary{
+        padding: 66px 20px 0 20px;
+    }
+    .section--feature .tiles li{
+        width: 50%;
+    }
+    .section--feature .tiles li:nth-child(2){
+        border-right: none;
+    }
+    .section--feature .tiles li img{
+        padding: 14px 30% 24px;
     }
 }
