@@ -550,8 +550,23 @@ footer .logo:hover svg {
         display: block;
     }
 
-    .section .inner{
-        width: 100%;
-        
+    /* VISUAL */
+    .section--visual{
+        background-image: url(../img/bg-small.jpg);
+    }
+    .section--visual .inner{
+        display: block;
+        max-width: none;
+        padding: 80px 20px;
+    }
+    .section--visual .summary{
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    #sign-form{
+        width: auto;
+        max-width: 500px;
+        margin: 0 auto;
     }
 }
